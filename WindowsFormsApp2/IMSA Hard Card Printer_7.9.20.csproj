@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{014826B4-0EE9-43A4-8845-D74222D9F89C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\12.20HardCard\as of 1.20\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommunicationsPipe">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\CommunicationsPipe.dll</HintPath>
+    </Reference>
+    <Reference Include="FargoNetAPI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\bin\dotnet\4_5\FargoNetAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="FargoNetAPI4">
+      <HintPath>..\..\..\..\Documents\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\bin\dotnet\4_0\FargoNetAPI4.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericEventArgs">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\GenericEventArgs.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericPrinterEmulators">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\GenericPrinterEmulators.dll</HintPath>
+    </Reference>
+    <Reference Include="MagneticEncodingSupport">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\MagneticEncodingSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkPrinterEmulators">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\NetworkPrinterEmulators.dll</HintPath>
+    </Reference>
+    <Reference Include="PrinterInstanceConfiguration">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\PrinterInstanceConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintJobDataParsers">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\PrintJobDataParsers.dll</HintPath>
+    </Reference>
+    <Reference Include="PrintServerEmulators">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\HID Global\HID Developer Studio - FARGO Printers and Drivers SDK Version 2\Emulator\PrintServerEmulators.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core">
+      <HintPath>..\..\..\..\Desktop\Asure ID\Barcode\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AC_Timed_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AC_Timed_Form.Designer.cs">
+      <DependentUpon>AC_Timed_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AC_Photo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AC_Photo_Form.Designer.cs">
+      <DependentUpon>AC_Photo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet.cs">
+      <DependentUpon>ImsaAdminDevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet61.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet61.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaAdminDevDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaAdminDevDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImsaSecDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImsaSecDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Form.Designer.cs">
+      <DependentUpon>Member_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_AC_Timed_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_AC_Timed_Form.Designer.cs">
+      <DependentUpon>Next_AC_Timed_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_AC_Photo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_AC_Photo_Form.Designer.cs">
+      <DependentUpon>Next_AC_Photo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_Member_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_Member_Form.Designer.cs">
+      <DependentUpon>Next_Member_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_Notes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_Notes_Form.Designer.cs">
+      <DependentUpon>Next_Notes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_Selection_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_Selection_Form.Designer.cs">
+      <DependentUpon>Next_Selection_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Next_SEC_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Next_SEC_Form.Designer.cs">
+      <DependentUpon>Next_SEC_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notes_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notes_Form.Designer.cs">
+      <DependentUpon>Notes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRACTICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRACTICE.Designer.cs">
+      <DependentUpon>PRACTICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintSystemJobInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SEC_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SEC_Form.Designer.cs">
+      <DependentUpon>SEC_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selection_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selection_Form.Designer.cs">
+      <DependentUpon>Selection_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SmartCardManager.cs" />
+    <Compile Include="System\Printing.cs" />
+    <Compile Include="Types.cs" />
+    <Compile Include="view_SecBatchPrintAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>view_SecBatchPrintAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WinSCard.cs" />
+    <EmbeddedResource Include="AC_Timed_Form.resx">
+      <DependentUpon>AC_Timed_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AC_Photo_Form.resx">
+      <DependentUpon>AC_Photo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Form.resx">
+      <DependentUpon>Member_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_AC_Timed_Form.resx">
+      <DependentUpon>Next_AC_Timed_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_AC_Photo_Form.resx">
+      <DependentUpon>Next_AC_Photo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_Member_Form.resx">
+      <DependentUpon>Next_Member_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_Notes_Form.resx">
+      <DependentUpon>Next_Notes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_Selection_Form.resx">
+      <DependentUpon>Next_Selection_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Next_SEC_Form.resx">
+      <DependentUpon>Next_SEC_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notes_Form.resx">
+      <DependentUpon>Notes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRACTICE.resx">
+      <DependentUpon>PRACTICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SEC_Form.resx">
+      <DependentUpon>SEC_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selection_Form.resx">
+      <DependentUpon>Selection_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ImsaAdminDevDataSet.xsc">
+      <DependentUpon>ImsaAdminDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet.xss">
+      <DependentUpon>ImsaAdminDevDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet1.xsc">
+      <DependentUpon>ImsaAdminDevDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet1.xss">
+      <DependentUpon>ImsaAdminDevDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet2.xsc">
+      <DependentUpon>ImsaAdminDevDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet2.xss">
+      <DependentUpon>ImsaAdminDevDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet3.xsc">
+      <DependentUpon>ImsaAdminDevDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet3.xss">
+      <DependentUpon>ImsaAdminDevDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet4.xsc">
+      <DependentUpon>ImsaAdminDevDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet4.xss">
+      <DependentUpon>ImsaAdminDevDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet51.xsc">
+      <DependentUpon>ImsaAdminDevDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet51.xss">
+      <DependentUpon>ImsaAdminDevDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet61.xsc">
+      <DependentUpon>ImsaAdminDevDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet61.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet61.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet61.xss">
+      <DependentUpon>ImsaAdminDevDataSet61.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet7.xsc">
+      <DependentUpon>ImsaAdminDevDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaAdminDevDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaAdminDevDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaAdminDevDataSet7.xss">
+      <DependentUpon>ImsaAdminDevDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaSecDataSet5.xsc">
+      <DependentUpon>ImsaSecDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ImsaSecDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImsaSecDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ImsaSecDataSet5.xss">
+      <DependentUpon>ImsaSecDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="view_SecBatchPrintAll.xsc">
+      <DependentUpon>view_SecBatchPrintAll.xsd</DependentUpon>
+    </None>
+    <None Include="view_SecBatchPrintAll.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>view_SecBatchPrintAll.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="view_SecBatchPrintAll.xss">
+      <DependentUpon>view_SecBatchPrintAll.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\IMSA_logo_Nav-and-Footer-330x124.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

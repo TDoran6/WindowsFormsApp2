@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImsaAdminDevDataSet7" targetNamespace="http://tempuri.org/ImsaAdminDevDataSet7.xsd" xmlns:mstns="http://tempuri.org/ImsaAdminDevDataSet7.xsd" xmlns="http://tempuri.org/ImsaAdminDevDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ImsaAdminDevConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ImsaAdminDevConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp2.Properties.Settings.GlobalReference.Default.ImsaAdminDevConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_HardCard_AllTableAdapter" GeneratorDataComponentClassName="view_HardCard_AllTableAdapter" Name="view_HardCard_All" UserDataComponentName="view_HardCard_AllTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ImsaAdminDevConnectionString (Settings)" DbObjectName="ImsaAdminDev.dbo.view_HardCard_All" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        Id, LicID, LastUpdateAt, [License Types], NameFull, Association, BatchPrint1, BatchPrint2, Type, Photo, ItemDescription
+FROM            dbo.view_HardCard_All
+WHERE        (BatchPrint2 = 1)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="LicID" DataSetColumn="LicID" />
+              <Mapping SourceColumn="LastUpdateAt" DataSetColumn="LastUpdateAt" />
+              <Mapping SourceColumn="License Types" DataSetColumn="License Types" />
+              <Mapping SourceColumn="NameFull" DataSetColumn="NameFull" />
+              <Mapping SourceColumn="Association" DataSetColumn="Association" />
+              <Mapping SourceColumn="BatchPrint1" DataSetColumn="BatchPrint1" />
+              <Mapping SourceColumn="BatchPrint2" DataSetColumn="BatchPrint2" />
+              <Mapping SourceColumn="Type" DataSetColumn="Type" />
+              <Mapping SourceColumn="Photo" DataSetColumn="Photo" />
+              <Mapping SourceColumn="ItemDescription" DataSetColumn="ItemDescription" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImsaAdminDevDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ImsaAdminDevDataSet7" msprop:Generator_UserDSName="ImsaAdminDevDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_HardCard_All" msprop:Generator_TableClassName="view_HardCard_AllDataTable" msprop:Generator_TableVarName="tableview_HardCard_All" msprop:Generator_RowChangedName="view_HardCard_AllRowChanged" msprop:Generator_TablePropName="view_HardCard_All" msprop:Generator_RowDeletingName="view_HardCard_AllRowDeleting" msprop:Generator_RowChangingName="view_HardCard_AllRowChanging" msprop:Generator_RowEvHandlerName="view_HardCard_AllRowChangeEventHandler" msprop:Generator_RowDeletedName="view_HardCard_AllRowDeleted" msprop:Generator_RowClassName="view_HardCard_AllRow" msprop:Generator_UserTableName="view_HardCard_All" msprop:Generator_RowEvArgName="view_HardCard_AllRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="LicID" msprop:Generator_ColumnVarNameInTable="columnLicID" msprop:Generator_ColumnPropNameInRow="LicID" msprop:Generator_ColumnPropNameInTable="LicIDColumn" msprop:Generator_UserColumnName="LicID" type="xs:int" minOccurs="0" />
+              <xs:element name="LastUpdateAt" msprop:Generator_ColumnVarNameInTable="columnLastUpdateAt" msprop:Generator_ColumnPropNameInRow="LastUpdateAt" msprop:Generator_ColumnPropNameInTable="LastUpdateAtColumn" msprop:Generator_UserColumnName="LastUpdateAt" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="License_x0020_Types" msprop:Generator_ColumnVarNameInTable="columnLicense_Types" msprop:Generator_ColumnPropNameInRow="License_Types" msprop:Generator_ColumnPropNameInTable="License_TypesColumn" msprop:Generator_UserColumnName="License Types" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameFull" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNameFull" msprop:Generator_ColumnPropNameInRow="NameFull" msprop:Generator_ColumnPropNameInTable="NameFullColumn" msprop:Generator_UserColumnName="NameFull" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="152" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Association" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnAssociation" msprop:Generator_ColumnPropNameInRow="Association" msprop:Generator_ColumnPropNameInTable="AssociationColumn" msprop:Generator_UserColumnName="Association" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BatchPrint1" msprop:Generator_ColumnVarNameInTable="columnBatchPrint1" msprop:Generator_ColumnPropNameInRow="BatchPrint1" msprop:Generator_ColumnPropNameInTable="BatchPrint1Column" msprop:Generator_UserColumnName="BatchPrint1" type="xs:boolean" minOccurs="0" />
+              <xs:element name="BatchPrint2" msprop:Generator_ColumnVarNameInTable="columnBatchPrint2" msprop:Generator_ColumnPropNameInRow="BatchPrint2" msprop:Generator_ColumnPropNameInTable="BatchPrint2Column" msprop:Generator_UserColumnName="BatchPrint2" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Type" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnPropNameInTable="TypeColumn" msprop:Generator_UserColumnName="Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Photo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPhoto" msprop:Generator_ColumnPropNameInRow="Photo" msprop:Generator_ColumnPropNameInTable="PhotoColumn" msprop:Generator_UserColumnName="Photo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ItemDescription" msprop:Generator_ColumnVarNameInTable="columnItemDescription" msprop:Generator_ColumnPropNameInRow="ItemDescription" msprop:Generator_ColumnPropNameInTable="ItemDescriptionColumn" msprop:Generator_UserColumnName="ItemDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

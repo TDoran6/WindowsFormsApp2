@@ -1,0 +1,146 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WindowsFormsApp2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImsaAdminDevConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;User ID=HardCardPrinter;Password=TyGe7q6hSPBa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;User ID=HardCardPrinter;Password=TyGe7q6hSPBa</Value>
+    </Setting>
+    <Setting Name="ImsaAdminDevConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin;Password=UHEvB2HCazSx&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin;Password=UHEvB2HCazSx</Value>
+    </Setting>
+    <Setting Name="Selection_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">664</Value>
+    </Setting>
+    <Setting Name="Selection_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">606</Value>
+    </Setting>
+    <Setting Name="Next_Selection_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">664</Value>
+    </Setting>
+    <Setting Name="Next_Selection_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">606</Value>
+    </Setting>
+    <Setting Name="AC_Photo_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">681</Value>
+    </Setting>
+    <Setting Name="AC_Photo_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">903</Value>
+    </Setting>
+    <Setting Name="Next_AC_Photo_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">681</Value>
+    </Setting>
+    <Setting Name="Next_AC_Photo_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">903</Value>
+    </Setting>
+    <Setting Name="AC_Timed_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">521</Value>
+    </Setting>
+    <Setting Name="AC_Timed_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">913</Value>
+    </Setting>
+    <Setting Name="Next_AC_Timed_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">521</Value>
+    </Setting>
+    <Setting Name="Next_AC_Timed_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">913</Value>
+    </Setting>
+    <Setting Name="Member_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">521</Value>
+    </Setting>
+    <Setting Name="Member_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">886</Value>
+    </Setting>
+    <Setting Name="Next_Member_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">521</Value>
+    </Setting>
+    <Setting Name="Next_Member_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">886</Value>
+    </Setting>
+    <Setting Name="SEC_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="SEC_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">606</Value>
+    </Setting>
+    <Setting Name="Next_SEC_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="Next_SEC_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">606</Value>
+    </Setting>
+    <Setting Name="Notes_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">448</Value>
+    </Setting>
+    <Setting Name="Notes_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">481</Value>
+    </Setting>
+    <Setting Name="Next_Notes_Form_Height" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">448</Value>
+    </Setting>
+    <Setting Name="Next_Notes_Form_Width" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">441</Value>
+    </Setting>
+    <Setting Name="Connection_String" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin;Password=UHEvB2HCazSx&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin;Password=UHEvB2HCazSx</Value>
+    </Setting>
+    <Setting Name="Conn_String" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=imsaregistration.database.windows.net;Initial Catalog=ImsaAdminDev;Persist Security Info=True;User ID=imsaAdmin</Value>
+    </Setting>
+    <Setting Name="SEC_Name_rect" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">1, 270, 220, 17</Value>
+    </Setting>
+    <Setting Name="Season" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2020</Value>
+    </Setting>
+    <Setting Name="AC_License_Type_rect1" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">10, 216, 197, 17</Value>
+    </Setting>
+    <Setting Name="AC_Name_rect2" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">10, 242, 197, 17</Value>
+    </Setting>
+    <Setting Name="AC_Association_rect3" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">10, 260, 197, 17</Value>
+    </Setting>
+    <Setting Name="AC_Member_Number_rect4" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">10, 309, 197, 17</Value>
+    </Setting>
+    <Setting Name="Member_License_Type_rect1" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">-325, 122, 315, 17</Value>
+    </Setting>
+    <Setting Name="Member_Name_rect2" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">-325, 110, 315, 17</Value>
+    </Setting>
+    <Setting Name="Member_Member_Number_rect4" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">-325, 140, 315, 17</Value>
+    </Setting>
+    <Setting Name="AC_PictureBox_Placement" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">62, 73, 103, 120</Value>
+    </Setting>
+    <Setting Name="AC_Barcode_Placement" Type="System.Drawing.Rectangle" Scope="Application">
+      <Value Profile="(Default)">26, 278, 165, 20</Value>
+    </Setting>
+    <Setting Name="Selection_Form_Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">2, 2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
